@@ -1,6 +1,5 @@
 package com.example;
 
-import static org.junit.Assert.assertTrue;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
@@ -32,6 +31,6 @@ public class ResponseTimeInterceptorTest
     @Test
     public void testEmptyResponseTimes() {
         interceptor.clear();
-        assertEquals(0.0, interceptor.getAverageResponseTime());
+        assertEquals(0.0, interceptor.getAverageResponseTime(), 0.0);
     }
 }
